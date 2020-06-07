@@ -1,0 +1,27 @@
+<view class="container">
+<!-- 头部介绍 -->
+	<view class="header {{scrollDown?'hidden':''}}">
+		<image class="logo" src="{{diningRoomImg}}"/>
+    <!-- http://p1.meituan.net/xianfu/4d942ae4c32d42041dadac1fdd951d5e995328.jpg -->
+		<view class="name ellipsis">{{diningRoomName}}</view>
+		<view class="welcome ellipsis">你好，这里是{{diningRoomName}}！</view>
+	</view>
+
+  <!-- 店铺列表 -->
+	<view class="content-container">
+		<scroll-view class="goods-container" scroll-y="true" scroll-into-view="">
+				<view class="goods" wx:for="{{shops}}" wx:for-item="item" wx:key="item.id">
+          <navigator url="/page/shop/shop?id={{item.id}}&name={{item.name}}&logo={{item.logo}}">
+            <view class='left'>
+              <image class="pic" src="{{item.logo ? item.logo : defaultImg}}"></image>
+            </view>
+            <view class='right'>
+              <view class="name ellipsis">{{item.name ? item.name : '第一家店'}}</view>
+              <view class="desc ellipsis">{{item.location ? item.location : '一楼'}}</view>
+            </view>
+            <view class='button'><text>今天吃这家</text></view>
+          </navigator>
+				</view>
+		</scroll-view>
+	</view>
+</view>

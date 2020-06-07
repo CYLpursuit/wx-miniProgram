@@ -1,0 +1,18 @@
+<view class='container'>
+  <view class='talk-title'><text>讨论区</text></view>
+  <view class='my-voice'>
+    <view class='text'>我想说：</view>
+    <input placeholder='请输入' value='{{inputVal}}' bindinput='getInputVal'></input>
+    <view class='send' bindtap='sendRemarks'>发送</view>
+  </view>
+  <view class='histpry-list'>
+    <view class='title'>
+      <text>留言板</text>
+      <view class='record'>(共<text>{{recordLen}}</text>条留言)</view>
+    </view>
+    <view class='list-item' wx:for="{{remarks}}" wx:for-item="item" wx:key="id">
+        <view class='id'><image src="{{img}}"></image></view>
+        <text>{{item.text}}</text>
+    </view>
+  </view>
+</view>

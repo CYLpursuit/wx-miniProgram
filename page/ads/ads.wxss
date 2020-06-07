@@ -1,0 +1,45 @@
+page{
+  box-sizing: content-box;
+  background-color:#fff;
+  height: 100%;
+  width: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.ads-list{
+  border-top: 1px solid #999;
+}
+.ads-item{
+  padding-top: 10rpx;
+}
+.ads-item .name{
+  width: 150rpx;
+  height:  40rpx;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  padding: 5rpx 0;
+  border: 2px solid rgb(1, 70, 129);
+}
+.ads-item .name text{
+  line-height: 40rpx;
+}
+.ads-item .image{
+  display: inline-block;
+  width: 50%;
+  height: 300rpx;
+  box-sizing: border-box;
+  border:1px solid #fff;
+}
+.ads-item .image image{
+  width: 100%;
+  height: 100%;
+}
+.ads-item .content{
+  margin-bottom: 20rpx;
+  font-size: 15px;
+  text-indent:2em;
+}

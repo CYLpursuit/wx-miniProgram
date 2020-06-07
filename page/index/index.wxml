@@ -1,0 +1,31 @@
+<view class="container">
+	<scroll-view scroll-y="true" scroll-into-view="{{scrollIntoView}}" bindscroll="onScroll">
+
+    <!-- 滚动栏 -->
+		<view class='up' bindtap='goAds'>
+        <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+          <block wx:for="{{banners}}" wx:key="id">
+            <swiper-item>
+              <image data-id="{{index}}" src="{{item.img}}"/>
+            </swiper-item>
+          </block>
+        </swiper>
+    </view>
+
+<!-- 食堂列表 -->
+      <view class='down'>
+            <view class="diningRooms" wx:for="{{diningRoomList}}" wx:key="id">
+              <view wx:for="{{diningRoomList}}" wx:for-item="list" wx:key="id">
+                  <view wx:for="{{list}}" wx:for-item="item" wx:key="id">
+                    <navigator url="/page/diningRoom/diningRoom?name={{item.name}}&&img={{item.img}}">
+                      <view  class="diningRoom" >
+                        <image src="{{item.img}}"/>
+                        <text>{{item.name}}</text>
+                      </view>
+                    </navigator>
+                  </view>
+              </view>
+            </view>
+      </view>
+	</scroll-view>
+</view>

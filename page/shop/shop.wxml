@@ -1,0 +1,25 @@
+<view class="container">
+<!-- 头部介绍 -->
+	<view class="header {{scrollDown?'hidden':''}}">
+		<image class="logo" src="{{shopLogo}}"/>
+		<view class="name ellipsis">{{shopName}}</view>
+		<view class="welcome ellipsis">欢迎光临{{shopName}}！</view>
+	</view>
+
+  <!-- 菜单列表 -->
+	<view class="content-container">
+		<scroll-view class="goods-container" scroll-y="true" scroll-into-view="">
+				<view class="goods" wx:for="{{mells}}" wx:for-item="item" wx:key="item.id">
+            <view class='left'>
+              <image class="pic" src="{{item.img ? item.img : defaultImg}}"></image>
+            </view>
+            <view class='right'>
+              <view class="name ellipsis">{{item.name ? item.name : '第一家店'}}</view>
+              <view class="desc ellipsis">{{item.price ? item.price : '一楼'}}元</view>
+              <view class="star ellipsis">{{item.star ? item.star : '3'}}星</view>
+            </view>
+            <view class='button'><text>今天吃这个</text></view>
+				</view>
+		</scroll-view>
+	</view>
+</view>

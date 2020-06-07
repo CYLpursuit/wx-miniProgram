@@ -1,0 +1,51 @@
+page{
+	font-family: "Microsoft Yahei, Arial, Helvetica, sans-serif";
+	font-size: 12px;
+  height: 100%;
+  background-color: #fff;
+}
+.container {
+	height: 100%;
+}
+scroll-view {
+	height: 100%;
+}
+.up{
+  height: 50%;
+}
+.banner {
+	height: 100%;
+}
+.banner image {
+	width: 100%;
+	height: 100%;
+}
+.dowm{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.down .diningRooms {
+  width: 100%;
+	height: auto;
+}
+.diningRooms .diningRoom {
+	float: left;
+	display: -webkit-flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 33%;
+	text-align: center;
+	margin: 10rpx 0;
+}
+.diningRooms .diningRoom image {
+	margin: 0 auto;
+	width: 100rpx;
+	height: 100rpx;
+}
+.diningRooms .diningRoom text {
+	color: rgba(0,0,0,.9);
+	font-size: 26rpx;
+	line-height: 2;
+}

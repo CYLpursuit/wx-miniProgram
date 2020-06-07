@@ -1,0 +1,11 @@
+<view class='container'>
+  <view class='ads-list'>
+    <view class='ads-item' wx:for="{{ads}}" wx:for-item="item" wx:key="id">
+      <view class='name'><text>{{item.name}}</text></view>
+      <view class='image' wx:for="{{item.img}}" wx:for-item="i" wx:key="id">
+        <image src='{{i.url}}'></image>
+      </view>
+      <view class='content'><text>{{item.content}}</text></view>
+    </view>
+  </view>
+</view>

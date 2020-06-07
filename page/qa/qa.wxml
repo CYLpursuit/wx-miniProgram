@@ -1,0 +1,53 @@
+<view class='container'>
+  <form class='form'>
+    <view class='title'>天财食堂服务调查</view>
+    <view class='qa-list'>
+          <view class='qa-item'><text>1.学校共9个食堂，你去过几个？</text>
+            <radio-group class='radio-group'>
+              <radio class='radio' value='1'>1-3</radio>
+              <radio class='radio' value='2'>4-6</radio>
+              <radio class='radio' value='3'>7-9</radio>
+            </radio-group>
+          </view>
+          <view class='qa-item'><text>2.你比较偏爱的是哪个食堂？（可多选）</text>
+            <checkbox-group class='checkbox-group'>
+              <checkbox class='checkbox' value='1'>A座食堂</checkbox>
+              <checkbox class='checkbox' value='2'>东院食堂</checkbox>
+              <checkbox class='checkbox' value='3'>心园餐厅</checkbox>
+              <checkbox class='checkbox' value='4'>西院食堂</checkbox>
+              <checkbox class='checkbox' value='5'>西院回民餐厅</checkbox>
+              <checkbox class='checkbox' value='6'>干训餐厅</checkbox>
+              <checkbox class='checkbox' value='7'>Z座食堂</checkbox>
+              <checkbox class='checkbox' value='8'>公寓食堂</checkbox>
+              <checkbox class='checkbox' value='9'>公寓回民餐厅</checkbox>
+            </checkbox-group>
+          </view>
+          <view class='qa-item'><text>3.你觉得学校食堂一下哪些方面做得令你比较满意？（可多选）</text> 
+            <checkbox-group class='checkbox-group'>
+                <checkbox class='checkbox' value='1'>卫生条件</checkbox>
+                <checkbox class='checkbox' value='2'>饮食环境</checkbox>
+                <checkbox class='checkbox' value='3'>菜系种类</checkbox>
+                <checkbox class='checkbox' value='4'>菜系口味</checkbox>
+                <checkbox class='checkbox' value='5'>排队秩序</checkbox>
+                <checkbox class='checkbox' value='6'>服务态度</checkbox>
+                <checkbox class='checkbox' value='7'>菜品价格</checkbox>
+              </checkbox-group>
+          </view>
+          <view class='qa-item'><text>4.你觉得学校食堂一下哪些方面做得令你很不满意？（可多选）</text> 
+            <checkbox-group class='checkbox-group'>
+                <checkbox class='checkbox' value='1'>卫生条件</checkbox>
+                <checkbox class='checkbox' value='2'>饮食环境</checkbox>
+                <checkbox class='checkbox' value='3'>菜系种类</checkbox>
+                <checkbox class='checkbox' value='4'>菜系口味</checkbox>
+                <checkbox class='checkbox' value='5'>排队秩序</checkbox>
+                <checkbox class='checkbox' value='6'>服务态度</checkbox>
+                <checkbox class='checkbox' value='7'>菜品价格</checkbox>
+              </checkbox-group>
+          </view>
+          <view class='qa-item'><text>5.你有哪些心里话想要对“食堂”说吗？</text>
+            <textarea placeholder='"食堂"，你听我说...'></textarea>
+          </view>
+    </view>
+    <view class='button' bindtap='goBack'>提交</view>
+  </form>
+</view>

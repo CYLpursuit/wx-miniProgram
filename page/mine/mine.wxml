@@ -1,0 +1,23 @@
+<view class="container">
+	<view class="header">
+		<view class='avatar'><open-data type="userAvatarUrl"></open-data></view>
+		<view class='nickname'><open-data type="userNickName"></open-data></view>
+	</view>
+	<view class="section">
+  <!-- form 问卷-->
+		<view class="iden">性别：<open-data type="userGender"></open-data></view>
+		<view class="iden">城市：<open-data type="userCity"></open-data></view>
+	</view>
+  <navigator url="/page/qa/qa">
+    <view class="section">
+      <view class="line">天财食堂服务调查<text class="tl">点击问卷</text></view>
+      <view class='arrow'><image src='../../imgs/mine/youjiantou_1.png'></image></view>
+    </view>
+  </navigator>
+  <navigator url="/page/talk/talk">
+    <view class="section">
+      <view class="line">讨论区<text class="tl">参与讨论</text></view>
+      <view class='arrow'><image src='../../imgs/mine/youjiantou_1.png'></image></view>
+    </view>
+  </navigator>
+</view>
